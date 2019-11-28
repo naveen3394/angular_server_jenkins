@@ -12,23 +12,23 @@ export class DataService {
  }
 Select()
 {
-return this.http.get("http://52.66.107.15:7777/emps");
+return this.http.get("http://localhost:7777/emps");
 }
 SelectByNo(No)
 {
-return this.http.get("http://52.66.107.15:7777/emps/"+No);
+return this.http.get("http://localhost:7777/emps/"+No);
 }
 Insert(empobj)
 {
-return this.http.post("http://52.66.107.15:7777/emps",empobj);
+return this.http.post("http://localhost:7777/emps",empobj);
 }
 Update(empobj)
 {
-return this.http.put("http://52.66.107.15:8888/emps/"+empobj.No,empobj);
+return this.http.put("http://localhost:8888/emps/"+empobj.No,empobj);
 }
 Delete(No)
 {
-return this.http.delete("http://52.66.107.15:7777/emps/"+No);
+return this.http.delete("http://localhost:7777/emps/"+No);
 
 }
 
