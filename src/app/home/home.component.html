@@ -1,0 +1,19 @@
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr *ngFor='let  e of emp'>
+                    <th>{{e.No}}</th>
+                    <th>{{e.Name}}</th>
+                    <th>{{e.Age}}</th>
+                <th><a routerLink="/edit/{{e.No}}">Edit</a></th>
+                <th><a routerLink="/delete/{{e.No}}">Delete</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
