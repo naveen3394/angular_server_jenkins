@@ -3,19 +3,21 @@
     <table class="table table-hover">
         <thead>
             <tr *ngFor='let  e of emp'>
-                    <th>{{e.No}}</th>
-                    <th>{{e.Name}}</th>
-                    <th>{{e.Age}}</th>
-                <th><a routerLink="/edit/{{e.No}}">Edit</a></th>
-                <th><a routerLink="/delete/{{e.No}}">Delete</a></th>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-
-                <h1>this is angular application</h1>
-            </tr>
+            
+                    <tr *ngFor='let  e of emp'>
+                            <td>{{e.No}}</td>
+                            <td>{{e.Name}}</td>
+                            <td>{{e.Age}}</td>
+                        <td><a routerLink="/edit/{{e.No}}">Edit</a></td>
+                        <td><a routerLink="/delete/{{e.No}}">Delete</a></td>
+                    </tr>
         </tbody>
     </table>
 </div>
